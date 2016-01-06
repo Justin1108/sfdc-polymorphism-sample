@@ -1,0 +1,6 @@
+<apex:component >
+  <apex:attribute name="Audio" type="Audio__c" description="Audio"/>
+  <apex:pageBlockSection title="Audio Information" columns="2" collapsible="false" showHeader="false">
+    <apex:inputField value="{!Audio.Name}"/>
+  </apex:pageBlockSection>
+</apex:component>

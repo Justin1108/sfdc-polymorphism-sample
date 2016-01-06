@@ -1,0 +1,25 @@
+<apex:page standardController="Media__c" extensions="MediaEditController">
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:sectionHeader title="Media Edit" subtitle="New Media"/>
+
+  <apex:form >
+  <apex:actionFunction name="selectMediaType" action="{!selectMediaType}" rerender="panMedia" status=""/>
+
+
+  <apex:pageBlock title="Media Edit" mode="edit">
+  <apex:pageBlockButtons >
+      <apex:commandButton action="{!save}" value="Save"/>
+      <apex:commandButton action="{!cancel}" value="Cancel"/>
+  </apex:pageBlockButtons>
+    <apex:pageBlockSection title="Information" columns="2">
+        <apex:inputField value="{!Media__c.Media_Type__c}" onchange="selectMediaType();"/>
+        <apex:inputField value="{!Media__c.Account__c}" />
+    </apex:pageBlockSection>
+    <apex:outputPanel id="panMedia">
+        <c:AudioEditComp Audio="{!Audio}" id="cAudio" rendered="{!Audio != null}"></c:AudioEditComp>
+        <c:ImageEditComp Image="{!Image}" id="cImage" rendered="{!Image != null}"></c:ImageEditComp>
+        <c:VideoEditComp Video="{!Video}" id="cVideo" rendered="{!Video != null}"></c:VideoEditComp>
+    </apex:outputPanel>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

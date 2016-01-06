@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Media_Request__c</members>
+        <members>Media__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Audio__c-Audio Layout</members>
+        <members>Image__c-Image Layout</members>
+        <members>Media__c-Media Layout</members>
+        <members>Video__c-Video Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>35.0</version>
+</Package>

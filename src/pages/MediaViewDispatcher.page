@@ -1,0 +1,2 @@
+<apex:page standardController="Media__c" extensions="MediaDispatcherController" action="{!dispatchView}">
+</apex:page>

@@ -1,0 +1,6 @@
+<apex:component >
+  <apex:attribute name="Video" type="Video__c" description="Video"/>
+  <apex:pageBlockSection title="Video Information" columns="2" collapsible="false" showHeader="false">
+    <apex:inputField value="{!Video.Name}"/>
+  </apex:pageBlockSection>
+</apex:component>

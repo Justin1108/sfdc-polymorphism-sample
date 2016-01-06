@@ -1,0 +1,6 @@
+<apex:component >
+  <apex:attribute name="Image" type="Image__c" description="Image"/>
+  <apex:pageBlockSection title="Image Information" columns="2" collapsible="false" showHeader="false">
+    <apex:inputField value="{!Image.Name}"/>
+  </apex:pageBlockSection>
+</apex:component>
